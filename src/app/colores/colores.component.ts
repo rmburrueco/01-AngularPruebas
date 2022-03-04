@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./colores.component.scss']
 })
 export class ColoresComponent implements OnInit {
-
+  
+  colorLocal:String = '';
   constructor() { }
 
   ngOnInit(): void {
@@ -18,7 +19,8 @@ export class ColoresComponent implements OnInit {
 
   //Genera un color aleatorio en formato hexadecimal
   colorHex():String{
-    return "#" + this.generarRandom() + this.generarRandom() + this.generarRandom();
+    this.colorLocal = "#" + this.generarRandom() + this.generarRandom() + this.generarRandom();
+    return this.colorLocal;
   }
 
 }
