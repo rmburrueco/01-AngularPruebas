@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = '01-AngularPruebas';
-  valor1 = true;
-  valor2 = true;
+  diasSemana = "";
 }

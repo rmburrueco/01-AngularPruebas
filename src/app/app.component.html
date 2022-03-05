@@ -1,35 +1,9 @@
-<div class="contenedor">
-  <div *ngIf="valor1">
-    <h1> Texto 1</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sollicitudin facilisis risus, sed placerat nisi scelerisque venenatis. Etiam vitae libero eu lorem vulputate commodo. Morbi non neque enim. Quisque ullamcorper tempus diam non facilisis. Sed malesuada metus nisl, vel porttitor urna tempus a. Vestibulum pellentesque pellentesque dui in elementum. Suspendisse in velit finibus, luctus nisl quis, viverra lorem.
+<h1> Organizador de tareas</h1>
 
-    </p>
-  </div>
+<div [ngSwitch]="diasSemana">
+  <p *ngSwitchCase=" 'lunes' "> Tomar café y trabajar</p>
+  <p *ngSwitchCase="13"> ---- 13 ---- </p>
+  <p *ngSwitchDefault> Elige un día de la semana para conocer tu destino </p>
 </div>
 
-
-<div class="contenedor">
-  <ng-container *ngIf="valor2 ; else otroTexto">
-  
-    <h1> Texto 2</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sollicitudin facilisis risus, sed placerat nisi scelerisque venenatis. Etiam vitae libero eu lorem vulputate commodo. Morbi non neque enim. Quisque ullamcorper tempus diam non facilisis. Sed malesuada metus nisl, vel porttitor urna tempus a. Vestibulum pellentesque pellentesque dui in elementum. Suspendisse in velit finibus, luctus nisl quis, viverra lorem.
-
-    </p>
-  </ng-container>
-</div>
-
-<ng-template #otroTexto>
-  <h1> OTRO TEXTO </h1>
-  <p>
-    Ut suscipit porttitor sapien in fermentum. Nunc a odio in magna vestibulum hendrerit id in eros. Nunc vitae eleifend leo, a scelerisque nibh. Nunc mi ligula, cursus ac feugiat sed, viverra consectetur ligula. Duis ac risus nisi. Donec efficitur dignissim urna id scelerisque. Donec lacinia dapibus felis sed dapibus. In leo nunc, iaculis sed varius sed, efficitur at enim.
-  </p>
-</ng-template>
-
-<hr>
-
-<button (click)="valor1 = false"> Texto 1 </button>
-
-<button (click)="valor2 = !valor2"> Texto 2 </button>
-
-<p> Valor1: {{valor1}} </p>
-<p> Valor2: {{valor2}} </p>
+<input type="text" [(ngModel)]="diasSemana" />
