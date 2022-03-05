@@ -1,26 +1,24 @@
 
 
-div div{
-    border: red 4px;
-}
-
-.contenedor{
-    border: solid;
-    width: 38%;
+.cuadrado{
     display: block;
-    min-height: 260px;
-    float: left;
-    padding: 5%;
+    border: solid 1px silver;
+    width: 150px;    
+    height: 150px;
+    margin: 20px;
+    background: #ccc;
 }
 
-button{
-    padding: 10px;
-    margin: 10px;
-    font-size: 15px;
-    color: #ffff;
-    background: #9e9e9e;
+button.activo{    
+    font-weight: bold;
+    color: yellow;
+    background: #03a9f4;
 }
 
-input{
-    font-size: 30px;
+.green{
+    border-bottom: 7px solid greenyellow;
+}
+
+.red{
+    border-bottom: 7px solid crimson;
 }

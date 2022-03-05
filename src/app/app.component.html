@@ -1,9 +1,6 @@
-<h1> Organizador de tareas</h1>
+<h1> Estilos </h1>
 
-<div [ngSwitch]="diasSemana">
-  <p *ngSwitchCase=" 'lunes' "> Tomar café y trabajar</p>
-  <p *ngSwitchCase="13"> ---- 13 ---- </p>
-  <p *ngSwitchDefault> Elige un día de la semana para conocer tu destino </p>
-</div>
+<div class="cuadrado" [ngStyle]="{'background':color ? color: 'peru'}"> </div>
 
-<input type="text" [(ngModel)]="diasSemana" />
+<button (click)="color = 'red'" [ngClass]="{ 'activo': color == 'red'}"> Rojo </button>
+<button (click)=" color = 'green' " [ngClass]="color"> Verde </button>
