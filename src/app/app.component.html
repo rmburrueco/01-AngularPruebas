@@ -6,21 +6,24 @@
     </p>
   </div>
 </div>
+
+
+<div class="contenedor">
+  <ng-container *ngIf="valor2 ; else otroTexto">
+  
+    <h1> Texto 2</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sollicitudin facilisis risus, sed placerat nisi scelerisque venenatis. Etiam vitae libero eu lorem vulputate commodo. Morbi non neque enim. Quisque ullamcorper tempus diam non facilisis. Sed malesuada metus nisl, vel porttitor urna tempus a. Vestibulum pellentesque pellentesque dui in elementum. Suspendisse in velit finibus, luctus nisl quis, viverra lorem.
+
+    </p>
+  </ng-container>
+</div>
+
 <ng-template #otroTexto>
   <h1> OTRO TEXTO </h1>
   <p>
     Ut suscipit porttitor sapien in fermentum. Nunc a odio in magna vestibulum hendrerit id in eros. Nunc vitae eleifend leo, a scelerisque nibh. Nunc mi ligula, cursus ac feugiat sed, viverra consectetur ligula. Duis ac risus nisi. Donec efficitur dignissim urna id scelerisque. Donec lacinia dapibus felis sed dapibus. In leo nunc, iaculis sed varius sed, efficitur at enim.
   </p>
 </ng-template>
-
-<div class="contenedor">
-  <div *ngIf="valor2 ; else otroTexto">
-    <h1> Texto 2</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sollicitudin facilisis risus, sed placerat nisi scelerisque venenatis. Etiam vitae libero eu lorem vulputate commodo. Morbi non neque enim. Quisque ullamcorper tempus diam non facilisis. Sed malesuada metus nisl, vel porttitor urna tempus a. Vestibulum pellentesque pellentesque dui in elementum. Suspendisse in velit finibus, luctus nisl quis, viverra lorem.
-
-    </p>
-  </div>
-</div>
 
 <hr>
 
