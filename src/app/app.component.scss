@@ -1,24 +1,13 @@
-
-
-.cuadrado{
-    display: block;
-    border: solid 1px silver;
-    width: 150px;    
-    height: 150px;
-    margin: 20px;
-    background: #ccc;
+li{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 10px 0 ;
 }
-
-button.activo{    
-    font-weight: bold;
-    color: yellow;
-    background: #03a9f4;
-}
-
-.green{
-    border-bottom: 7px solid greenyellow;
-}
-
-.red{
-    border-bottom: 7px solid crimson;
+li span{
+    color: #fff;
+    background: red;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 4px 8px;
+    letter-spacing: 2px;
 }
