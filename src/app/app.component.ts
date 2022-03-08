@@ -8,9 +8,20 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = '01-AngularPruebas';
-  libros:Array<Object>;
+  libros: Array<any>;
 
-  constructor(){
-    this.libros = [ "uno", "dos", "tres" ]
+  constructor() {
+    this.libros = [
+      {
+        id: '1',
+        titulo: 'El retrato de Dorain Gray',
+        autor: 'Oscar Wilde'
+      },
+      {
+        id: '2',
+        titulo: 'La mejor inversión',
+        autor: 'Desconocido'
+      }
+    ]
   }
 }
